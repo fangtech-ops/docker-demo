@@ -1,4 +1,4 @@
-node ('fsiem_rocky9_105-153'){
+node ('fsiem_new_15'){
    def commit_id
    stage('Preparation') {
      checkout scm
