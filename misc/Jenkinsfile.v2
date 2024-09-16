@@ -1,4 +1,4 @@
-node ('fsiem_new_15'){
+node ('docker_99'){
    def commit_id
    stage('Preparation') {
      checkout scm
