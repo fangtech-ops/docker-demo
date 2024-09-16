@@ -18,7 +18,7 @@ node ('fsiem_new_15'){
      def myTestContainer = docker.image('node:16')
      myTestContainer.pull()
      myTestContainer.inside("--link ${mysql.id}:mysql") { // using linking, mysql will be available at host: mysql, port: 3306
-          sh 'npm install --only=dev' 
+          sh 'npm install' 
           sh 'npm test'                     
      }                                   
      mysql.stop()
