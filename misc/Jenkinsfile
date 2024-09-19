@@ -7,7 +7,7 @@ node ('fsiem_rocky9_105-153') {
    }
    stage('test') {
      nodejs(nodeJSInstallationName: 'nodejs') {
-       sh 'npm install --only=dev'
+       sh 'npm install '
        sh 'npm test'
      }
    }
